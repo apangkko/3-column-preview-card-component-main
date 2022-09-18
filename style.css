@@ -76,9 +76,15 @@ body {
     font-size: 0.95rem;
     font-family: inherit;
     background-color: var(--clr-veryLightGray);
-    border: 0;
+    border: 2px solid var(--clr-veryLightGray);
     border-radius: 100px;
-    padding: .95em 2.25em;
+    padding: .9em 2.2em;
+}
+
+.btn:hover {
+    font-size: inherit;
+    color: var(--clr-veryLightGray);
+    background-color: transparent;
 }
 
 @media (min-width: 48rem) {
