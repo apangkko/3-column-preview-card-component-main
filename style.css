@@ -1,0 +1,93 @@
+:root {
+    --clr-brightOrange: hsl(31, 77%, 52%);
+    --clr-darkCyan: hsl(184, 100%, 22%);
+    --clr-veryDarkCyan: hsl(179, 100%, 13%);
+    --clr-transWhite: hsla(0, 0%, 100%, 0.75);
+    --clr-veryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    background-color: var(--clr-veryLightGray);
+    color: var(--clr-transWhite);
+    font-size: 0.938rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 2.75rem;
+}
+.card--orange {
+    background-color: var(--clr-brightOrange);
+}
+.card--orange > .btn {
+    color: var(--clr-brightOrange);
+}
+.card--cyan {
+    background-color: var(--clr-darkCyan);
+}
+.card--cyan > .btn {
+    color: var(--clr-darkCyan);
+}
+.card--darkCyan {
+    background-color: var(--clr-veryDarkCyan);
+}
+.card--darkCyan > .btn {
+    color: var(--clr-veryDarkCyan);
+}
+
+.heading {
+    color: var(--clr-veryLightGray);
+    font-size: 2.4rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
+    line-height: 1.8;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: var(--clr-veryLightGray);
+    border: 0;
+    border-radius: 100px;
+    padding: .95em 2.25em;
+}
+
+@media (min-width: 48rem) {
+    .container {
+        display: flex;
+        max-width: 57.5rem;
+    }
+
+    .text {
+        padding-bottom: 4rem;
+    }
+}
